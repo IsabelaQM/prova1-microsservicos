@@ -4,6 +4,8 @@ Primeira prova da disciplina de Projeto Microsserviços e NoSQL, do curso de Tec
 
 Objetivo: Desenvolvimento de serviços para Usuários, Produtos e Shopping para no final do curso integrá-los formando um mini ecommerce.
 
+Obs.: As datas adotadas nos projetos seguem o padrão internacional ISO-8601, que é yyyy-MM-dd. Isso significa que as datas deve ser fornecidas no formato "ano-mês-dia". 
+
 ## Tecnologias e Ferramentas
 
 - Java
@@ -121,8 +123,9 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
  
   - GET by product Identifier - http://localhost:8080/shopping/productIdentifier/{productIdentifier}
     
-  - GET search by date and minimum value - http://localhost:8080/shopping/search?startDate={startDate}&endDate={endDate}&minimumValue={minimunValue} 
+  - GET search by date and minimum value - http://localhost:8080/shopping/search?startDate={startDate}&endDate={endDate}&minimumValue={minimunValue}
+    <p> Exemplo: http://localhost:8080/shopping/search?startDate=2024-01-01&endDate=2024-12-31&minimumValue=1000</p>
 
   - GET report - http://localhost:8080/shopping/search?startDate={startDate}&endDate={endDate}
-      
+     <p> Exemplo: http://localhost:8080/shopping/search?startDate=2024-01-01&endDate=2024-12-05</p>
     
