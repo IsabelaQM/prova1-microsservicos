@@ -4,7 +4,7 @@ Primeira prova da disciplina de Projeto Microsserviços e NoSQL, do curso de Tec
 
 Objetivo: Desenvolvimento de serviços para Usuários, Produtos e Shopping para no final do curso integrá-los formando um mini ecommerce.
 
-Obs.: As datas adotadas nos projetos seguem o padrão internacional ISO-8601, que é yyyy-MM-dd. Isso significa que as datas deve ser fornecidas no formato "ano-mês-dia". 
+Obs.: As datas adotadas nos projetos seguem o padrão internacional ISO-8601, que é yyyy-MM-dd. Isso significa que as datas devem ser fornecidas no formato "ano-mês-dia". 
 
 ## Tecnologias e Ferramentas
 
