@@ -73,8 +73,8 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
  
    <h3>Product (/product)</h3>
 
-   - POST - http://localhost:8080/product
-     Exemplo do corpo da requisição em formato JSON:
+  - POST - http://localhost:8080/product
+    + Exemplo do corpo da requisição em formato JSON:<br>
       {
         "name": "O homem que calculava",
         "description": "Um livro clássico",
@@ -87,7 +87,7 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
   - GET findById - http://localhost:8080/product/{id}
 
   - PUT product - http://localhost:8080/product/{id}
-     Exemplo do corpo da requisição em formato JSON:<br>
+    + Exemplo do corpo da requisição em formato JSON:<br>
       {
         "name": "Smartphone Iphone 15",
         "description": "Aparelho celular do modelo 15",
