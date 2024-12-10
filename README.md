@@ -49,7 +49,7 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
       
   - DELETE user by id - http://localhost:8080/user/{id}
  
- ## Product API (/product)
+ ## Product API
  
   <h3>Category (/category)</h3>
 
