@@ -15,7 +15,7 @@ Objetivo: Desenvolvimento de serviços para Usuários, Produtos e Shopping para 
 
 O projeto contou com a implementação dos seguintes endpoints, que foram testados a partir da extensão Thunder Client do Visual Studio Code
 
-- USER-API (/user)
+## User API (/user)
 
   - POST - http://localhost:8080/user
     + Exemplo do corpo da requisição em formato JSON:<br>
@@ -47,9 +47,9 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
       
   - DELETE user by id - http://localhost:8080/user/{id}
  
-
-- PRODUCT-API
-  <p>Category (/category)</p>
+ ## Product API (/product)
+ 
+  <h3>Category (/category)</h3>
 
   - POST category - http://localhost:8080/category
     + Exemplo do corpo da requisição em formato JSON:<br>
@@ -69,23 +69,23 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
       
   - DELETE category by id - http://localhost:8080/category/{id}
  
-   <p>Product (/product)</p>
+   <h3>Product (/product)</h3>
 
-    - POST - http://localhost:8080/product
-    + Exemplo do corpo da requisição em formato JSON:<br>
+   - POST - http://localhost:8080/product
+     Exemplo do corpo da requisição em formato JSON:
       {
         "name": "O homem que calculava",
         "description": "Um livro clássico",
         "price": 40.0,
         "categoryId": "674fb474da5d9241614a9882"
       }
-
+     
   - GET all products - http://localhost:8080/product
        
   - GET findById - http://localhost:8080/product/{id}
 
   - PUT product - http://localhost:8080/product/{id}
-    + Exemplo do corpo da requisição em formato JSON:<br>
+     Exemplo do corpo da requisição em formato JSON:<br>
       {
         "name": "Smartphone Iphone 15",
         "description": "Aparelho celular do modelo 15",
@@ -101,5 +101,28 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
   - GET by category Id - http://localhost:8080/product/category/{categoryId}
 
   - GET by product Identifier - http://localhost:8080/product/productIdentifier/{productIdentifier}
+    
+ 
+ ## Shopping API (/shopping)
+
+  - POST - http://localhost:8080/shopping
+    + Exemplo do corpo da requisição em formato JSON:<br>
+        {
+       "userIdentifier": "user1",
+  "items": [{"productIdentifier": "a1","price": 100.0},{"productIdentifier": "iphone-15","price": 7000.0}]}
+
+  - GET all shoppings - http://localhost:8080/shopping
+       
+  - GET findById - http://localhost:8080/shopping/{id}
+    
+  - GET shop by user - http://localhost:8080/shopping/shopByUser/{userIdentifier}
+
+  - GET shop by date - http://localhost:8080/shopping/shopByDate/{date}
+ 
+  - GET by product Identifier - http://localhost:8080/shopping/productIdentifier/{productIdentifier}
+    
+  - GET search by date and minimum value - http://localhost:8080/shopping/search?startDate={startDate}&endDate={endDate}&minimumValue={minimunValue} 
+
+  - GET report - http://localhost:8080/shopping/search?startDate={startDate}&endDate={endDate}
       
     
