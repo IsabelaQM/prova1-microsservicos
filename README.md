@@ -39,11 +39,67 @@ O projeto contou com a implementação dos seguintes endpoints, que foram testad
  
   - PUT user - http://localhost:8080/user/{id}
     + Exemplo do corpo da requisição em formato JSON:<br>
-        {
+      {
       "endereco": "Rua das Margaridas 1000",
       "email": "maria@outlook.com",
       "telefone": "11987654311"
       }
       
   - DELETE user by id - http://localhost:8080/user/{id}
+ 
+
+- PRODUCT-API
+  <p>Category (/category)</p>
+
+  - POST category - http://localhost:8080/category
+    + Exemplo do corpo da requisição em formato JSON:<br>
+      {
+      "name": "Celulares"
+      }
+
+  - GET all categories - http://localhost:8080/category
+
+  - GET pageable - Exemplo: http://localhost:8080/category/pageable?page=0&size=5
+ 
+  - PUT category - http://localhost:8080/category/{id}
+    + Exemplo do corpo da requisição em formato JSON:<br>
+      {
+      "name": "Smartphones"
+      }
+      
+  - DELETE category by id - http://localhost:8080/category/{id}
+ 
+   <p>Product (/product)</p>
+
+    - POST - http://localhost:8080/product
+    + Exemplo do corpo da requisição em formato JSON:<br>
+      {
+        "name": "O homem que calculava",
+        "description": "Um livro clássico",
+        "price": 40.0,
+        "categoryId": "674fb474da5d9241614a9882"
+      }
+
+  - GET all products - http://localhost:8080/product
+       
+  - GET findById - http://localhost:8080/product/{id}
+
+  - PUT product - http://localhost:8080/product/{id}
+    + Exemplo do corpo da requisição em formato JSON:<br>
+      {
+        "name": "Smartphone Iphone 15",
+        "description": "Aparelho celular do modelo 15",
+        "productIdentifier": "iphone-15",
+        "price": 7000.0,
+        "categoryId": "674fb474da5d9241614a9882"
+      }
+
+  - DELETE product by id - http://localhost:8080/product/{id}
+
+  - GET pageable - Exemplo: http://localhost:8080/product/pageable?page=0&size=5
+    
+  - GET by category Id - http://localhost:8080/product/category/{categoryId}
+
+  - GET by product Identifier - http://localhost:8080/product/productIdentifier/{productIdentifier}
+      
     
